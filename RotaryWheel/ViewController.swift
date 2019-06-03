@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var knobLeftAlignConstrain: NSLayoutConstraint!
     @IBOutlet weak var stackViewLeftConstraint: NSLayoutConstraint!
     @IBOutlet weak var stackViewRightConstraint: NSLayoutConstraint!
+    
     @IBAction func changeWheelPositionAction(_ sender: Any) {
         changeWheelPosition()
     }
@@ -65,7 +66,6 @@ class ViewController: UIViewController {
     private func setupRotaryWheel(){
         knobView.maximumValue = Float(numberOfViews)
         knobView.lineWidth = 6
-        knobView.tintColor = .black
         knobView.setValue(Float(currentView))
         knobView.addTarget(self, action: #selector(handleValueChanged), for: .valueChanged)
     }
@@ -128,7 +128,5 @@ extension ViewController: UIViewControllerPreviewingDelegate{
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
         navigationController?.pushViewController(viewControllerToCommit, animated: true)
     }
-    
-    
 }
 

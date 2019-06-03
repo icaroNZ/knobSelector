@@ -19,6 +19,7 @@
 		20112EA122A4BD11002A6E16 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112EA022A4BD11002A6E16 /* Knob.swift */; };
 		20112EA522A4D477002A6E16 /* PeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112EA422A4D477002A6E16 /* PeakViewController.swift */; };
 		20112EA722A4F035002A6E16 /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112EA622A4F035002A6E16 /* UIView_Extension.swift */; };
+		20E7FAF122A5D37F00866B92 /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7FAF022A5D37F00866B92 /* TableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		20112EA022A4BD11002A6E16 /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
 		20112EA422A4D477002A6E16 /* PeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakViewController.swift; sourceTree = "<group>"; };
 		20112EA622A4F035002A6E16 /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
+		20E7FAF022A5D37F00866B92 /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				20112E8222A3D2AC002A6E16 /* ViewController.swift */,
 				20112E8C22A3D2AE002A6E16 /* Info.plist */,
 				20112EA422A4D477002A6E16 /* PeakViewController.swift */,
+				20E7FAF022A5D37F00866B92 /* TableTableViewController.swift */,
 			);
 			path = RotaryWheel;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				20112E9522A3D4AF002A6E16 /* CGFloat_Extension.swift in Sources */,
 				20112EA722A4F035002A6E16 /* UIView_Extension.swift in Sources */,
 				20112E8122A3D2AC002A6E16 /* AppDelegate.swift in Sources */,
+				20E7FAF122A5D37F00866B92 /* TableTableViewController.swift in Sources */,
 				20112EA122A4BD11002A6E16 /* Knob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
