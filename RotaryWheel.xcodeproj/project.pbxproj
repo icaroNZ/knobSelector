@@ -12,6 +12,13 @@
 		20112E8622A3D2AC002A6E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20112E8422A3D2AC002A6E16 /* Main.storyboard */; };
 		20112E8822A3D2AE002A6E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20112E8722A3D2AE002A6E16 /* Assets.xcassets */; };
 		20112E8B22A3D2AE002A6E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20112E8922A3D2AE002A6E16 /* LaunchScreen.storyboard */; };
+		20112E9522A3D4AF002A6E16 /* CGFloat_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112E9422A3D4AF002A6E16 /* CGFloat_Extension.swift */; };
+		20112E9722A3F335002A6E16 /* UIImage_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112E9622A3F335002A6E16 /* UIImage_Extension.swift */; };
+		20112E9B22A49B74002A6E16 /* AVAudioPlayer_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112E9A22A49B74002A6E16 /* AVAudioPlayer_Extension.swift */; };
+		20112E9F22A49DE7002A6E16 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 20112E9E22A49DE7002A6E16 /* click.mp3 */; };
+		20112EA122A4BD11002A6E16 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112EA022A4BD11002A6E16 /* Knob.swift */; };
+		20112EA522A4D477002A6E16 /* PeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112EA422A4D477002A6E16 /* PeakViewController.swift */; };
+		20112EA722A4F035002A6E16 /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20112EA622A4F035002A6E16 /* UIView_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		20112E8722A3D2AE002A6E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20112E8A22A3D2AE002A6E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20112E8C22A3D2AE002A6E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20112E9422A3D4AF002A6E16 /* CGFloat_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat_Extension.swift; sourceTree = "<group>"; };
+		20112E9622A3F335002A6E16 /* UIImage_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extension.swift; sourceTree = "<group>"; };
+		20112E9A22A49B74002A6E16 /* AVAudioPlayer_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioPlayer_Extension.swift; sourceTree = "<group>"; };
+		20112E9E22A49DE7002A6E16 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		20112EA022A4BD11002A6E16 /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		20112EA422A4D477002A6E16 /* PeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakViewController.swift; sourceTree = "<group>"; };
+		20112EA622A4F035002A6E16 /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,53 @@
 		20112E7F22A3D2AC002A6E16 /* RotaryWheel */ = {
 			isa = PBXGroup;
 			children = (
+				20E7FAEF22A5CBBF00866B92 /* Assets */,
+				20E7FAEE22A5CB9900866B92 /* Storyboards */,
+				20E7FAED22A54B2A00866B92 /* MP3 */,
+				2058BAE122A54960000C6BA6 /* Extensions */,
+				20112EA022A4BD11002A6E16 /* Knob.swift */,
 				20112E8022A3D2AC002A6E16 /* AppDelegate.swift */,
 				20112E8222A3D2AC002A6E16 /* ViewController.swift */,
-				20112E8422A3D2AC002A6E16 /* Main.storyboard */,
-				20112E8722A3D2AE002A6E16 /* Assets.xcassets */,
-				20112E8922A3D2AE002A6E16 /* LaunchScreen.storyboard */,
 				20112E8C22A3D2AE002A6E16 /* Info.plist */,
+				20112EA422A4D477002A6E16 /* PeakViewController.swift */,
 			);
 			path = RotaryWheel;
+			sourceTree = "<group>";
+		};
+		2058BAE122A54960000C6BA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20112E9622A3F335002A6E16 /* UIImage_Extension.swift */,
+				20112EA622A4F035002A6E16 /* UIView_Extension.swift */,
+				20112E9422A3D4AF002A6E16 /* CGFloat_Extension.swift */,
+				20112E9A22A49B74002A6E16 /* AVAudioPlayer_Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20E7FAED22A54B2A00866B92 /* MP3 */ = {
+			isa = PBXGroup;
+			children = (
+				20112E9E22A49DE7002A6E16 /* click.mp3 */,
+			);
+			path = MP3;
+			sourceTree = "<group>";
+		};
+		20E7FAEE22A5CB9900866B92 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				20112E8422A3D2AC002A6E16 /* Main.storyboard */,
+				20112E8922A3D2AE002A6E16 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		20E7FAEF22A5CBBF00866B92 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				20112E8722A3D2AE002A6E16 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20112E8B22A3D2AE002A6E16 /* LaunchScreen.storyboard in Resources */,
+				20112E9F22A49DE7002A6E16 /* click.mp3 in Resources */,
 				20112E8822A3D2AE002A6E16 /* Assets.xcassets in Resources */,
 				20112E8622A3D2AC002A6E16 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20112E9B22A49B74002A6E16 /* AVAudioPlayer_Extension.swift in Sources */,
+				20112E9722A3F335002A6E16 /* UIImage_Extension.swift in Sources */,
+				20112EA522A4D477002A6E16 /* PeakViewController.swift in Sources */,
 				20112E8322A3D2AC002A6E16 /* ViewController.swift in Sources */,
+				20112E9522A3D4AF002A6E16 /* CGFloat_Extension.swift in Sources */,
+				20112EA722A4F035002A6E16 /* UIView_Extension.swift in Sources */,
 				20112E8122A3D2AC002A6E16 /* AppDelegate.swift in Sources */,
+				20112EA122A4BD11002A6E16 /* Knob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
