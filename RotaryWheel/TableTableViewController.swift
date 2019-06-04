@@ -14,6 +14,7 @@ class TableTableViewController: UITableViewController {
     
     let listForTableView = ["Value 1","Value 2","Value 3","Value 4","Value 5","Value 6", "Value 7", "Value 8", "Value 9"]
     
+    var numberOfRows = 0
     var previusView = 0
     var currentView = 0
     
@@ -29,7 +30,7 @@ class TableTableViewController: UITableViewController {
         if traitCollection.forceTouchCapability == .available{
             registerForPreviewing(with: self , sourceView: self.knobView)
         }
-        
+        numberOfRows = listForTableView.count
         setupRotaryWheel()
 
     }
@@ -40,7 +41,7 @@ class TableTableViewController: UITableViewController {
     }
 
     private func setupRotaryWheel(){
-        knobView.maximumValue = Float(listForTableView.count)
+        knobView.maximumValue = Float(numberOfRows - 1)
         knobView.lineWidth = 6
         knobView.setValue(0)
         knobView.addTarget(self, action: #selector(handleValueChanged), for: .valueChanged)
@@ -55,8 +56,18 @@ class TableTableViewController: UITableViewController {
     }
     
     private func changeActiveRow() {
+        print(currentView)
         let indexPath = IndexPath(row: currentView, section: 0);
-        self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableView.ScrollPosition.none)
+        self.tableView.reloadData()
+        self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableView.ScrollPosition.middle)
+    }
+    
+    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
+
+        knobView.frame = CGRect(x: self.view.bounds.size.width - knobView.bounds.size.width - 27,
+                                y: self.view.bounds.size.height - knobView.bounds.size.height - (self.navigationController?.navigationBar.bounds.size.height)! - 40,
+                                width: knobView.bounds.size.width,
+                                height: knobView.bounds.size.height)
     }
     
     // MARK: - Table view data source
@@ -66,7 +77,7 @@ class TableTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listForTableView.count
+        return numberOfRows
     }
 
     
